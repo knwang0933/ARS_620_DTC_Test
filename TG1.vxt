@@ -1,77 +1,76 @@
-﻿<testmodule title="Uds_XML" version="1.0"> 
-	<testgroup title="10服务"> 
-		<capltestcase name="UDS_0x10_01" title="USD_0x10_01"> 
-		</capltestcase> 
-		<capltestcase name="UDS_0x10_81" title="USD_0x10_81"> 
-		</capltestcase> 
-		<capltestcase name="UDS_0x10_NRC_13" title="USD_0x10__NRC_13"> 
-		</capltestcase> 
-		<capltestcase name="UDS_0x10_NRC_12" title="USD_0x10__NRC_12"> 
-		</capltestcase>
-	</testgroup> 
-	<testgroup title="11服务"> 
-		<capltestcase name="UDS_0x11_NRC_13" title="UDS_0x11_NRC_13"> 
-		</capltestcase> 
-		<capltestcase name="UDS_0x11_NRC_12" title="UDS_0x11_NRC_12"> 
-		</capltestcase> 
-	</testgroup> 
-	<testgroup title="14服务"> 
-		<capltestcase name="UDS_0x14" title="UDS_0x14"> 
-		</capltestcase> 
-		<capltestcase name="UDS_0x14_NRC_13" title="UDS_0x14_NRC_13"> 
-		</capltestcase> 
-		<capltestcase name="UDS_0x14_NRC_31" title="UDS_0x14_NRC_31"> 
-		</capltestcase> 
-	</testgroup> 
-	<testgroup title="19服务"> 
-		<capltestcase name="UDS_0x19" title="UDS_0x19"> 
-		</capltestcase> 
-		<capltestcase name="UDS_0x19_NRC_12" title="UDS_0x19_NRC_12"> 
-		</capltestcase> 
-		<capltestcase name="UDS_0x19_NRC_13" title="UDS_0x19_NRC_13"> 
-		</capltestcase> 
-	</testgroup> 
-	<testgroup title="22服务"> 
-		<capltestcase name="UDS_0x22_F198" title="UDS_0x22_F198"> 
-		</capltestcase> 
-	</testgroup> 
-	<testgroup title="28服务"> 
-		<capltestcase name="UDS_0x28" title="UDS_0x28"> 
-		</capltestcase> 
-		<capltestcase name="UDS_0x28_NRC_7F" title="UDS_0x28_NRC_7F"> 
-		</capltestcase> 
-		<capltestcase name="UDS_0x28_NRC_12" title="UDS_0x28_NRC_12"> 
-		</capltestcase> 
-		<capltestcase name="UDS_0x28_NRC_13" title="UDS_0x28_NRC_13"> 
-		</capltestcase> 
-		<capltestcase name="UDS_0x28_NRC_31" title="UDS_0x28_NRC_31"> 
-		</capltestcase> 
-	</testgroup> 
-	<testgroup title="2E服务"> 
-		<capltestcase name="UDS_0x2E_NRC_33" title="UDS_0x2E_NRC_33" 
-			class="Diag_Auto" assembly="Diag_Auto"> 
-		</capltestcase> 
-	</testgroup>
-	<testgroup title="2F服务"> 
-		<capltestcase name="UDS_0x2F_NRC_11" title="UDS_0x2F_NRC_11"> 
-		</capltestcase> 
-	</testgroup>
-	<testgroup title="31服务"> 
-		<capltestcase name="UDS_0x31_NRC_13" title="UDS_0x31_NRC_13"> 
-		</capltestcase> 
-		<capltestcase name="UDS_0x31_NRC_7F" title="UDS_0x31_NRC_7F"> 
-		</capltestcase> 
-		<capltestcase name="UDS_0x31_NRC_33" title="UDS_0x31_NRC_33"> 
-		</capltestcase> 
-	</testgroup>
-	<testgroup title="85服务"> 
-		<capltestcase name="UDS_0x85" title="UDS_0x85"> 
-		</capltestcase> 
-		<capltestcase name="UDS_0x85_NRC_7F" title="UDS_0x85_NRC_7F"> 
-		</capltestcase> 
-		<capltestcase name="UDS_0x85_NRC_12" title="UDS_0x85_NRC_12"> 
-		</capltestcase> 
-		<capltestcase name="UDS_0x85_NRC_13" title="UDS_0x85_NRC_13"> 
-		</capltestcase> 
-	</testgroup>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testmodule title="CANoe TestModule" version="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.vector-informatik.de/CANoe/TestModule/1.27" xmlns:ai="http://www.vector-informatik.de/CANoe/TestModuleSchemaAppInfo/1.0">
+
+	<testgroup title="系統初始化">
+    <capltestcase name="SYS_Init_PowerOn" title="系統上電與網路喚醒" />
+    <capltestcase name="SYS_Init_DiagnosticSession" title="診斷連線與Session切換" />
+    <capltestcase name="SYS_Init_DTCPreconditionCheck" title="DTC測試前置條件確認" />
+    <capltestcase name="SYS_Init_ClearDTC" title="初始化清除歷史DTC" />
+  </testgroup>
+
+  <testgroup title="DTC_C00188">
+    <capltestcase name="DTC_C00188" title="C00188 DTC PRIVATE CAN BUSOFF" />
+  </testgroup>
+  <testgroup title="DTC_9C6200">
+    <capltestcase name="DTC_9C6200" title="9C6200 DTC ALIGNMENT NEVER DONE" />
+  </testgroup>
+  <testgroup title="DTC_9C6300">
+    <capltestcase name="DTC_9C6300" title="9C6300 DTC ALIGNMENT NOT OK" />
+  </testgroup>
+  <testgroup title="DTC_577B00">
+    <capltestcase name="DTC_577B00" title="577B00 DTC ONLINE CALIBRATION FAILED" />
+  </testgroup>
+  <testgroup title="DTC_9C6500">
+    <capltestcase name="DTC_9C6500" title="9C6500 DTC SENSOR FULL BLOCKAGE" />
+  </testgroup>
+  <testgroup title="DTC_577C87">
+    <capltestcase name="DTC_577C87" title="577C87 DTC LOST COMMUNICATION WITH ACU" />
+  </testgroup>
+  <testgroup title="DTC_577D87">
+    <capltestcase name="DTC_577D87" title="577D87 DTC LOST COMMUNICATION WITH ESC" />
+  </testgroup>
+  <testgroup title="DTC_578E87">
+    <capltestcase name="DTC_578E87" title="578E87 DTC LOST COMMUNICATION WITH SAS" />
+  </testgroup>
+  <testgroup title="DTC_578283">
+    <capltestcase name="DTC_578283" title="578283 DTC ACU CHECKSUM ERROR" />
+  </testgroup>
+  <testgroup title="DTC_578383">
+    <capltestcase name="DTC_578383" title="578383 DTC ESC CHECKSUM ERROR" />
+  </testgroup>
+  <testgroup title="DTC_578483">
+    <capltestcase name="DTC_578483" title="578483 DTC SAS CHECKSUM ERROR" />
+  </testgroup>
+  <testgroup title="DTC_578682">
+    <capltestcase name="DTC_578682" title="578682 DTC ACU ROLLING COUNTER ERROR" />
+  </testgroup>
+  <testgroup title="DTC_578782">
+    <capltestcase name="DTC_578782" title="578782 DTC ESC ROLLING COUNTER ERROR" />
+  </testgroup>
+  <testgroup title="DTC_578882">
+    <capltestcase name="DTC_578882" title="578882 DTC SAS ROLLING COUNTER ERROR" />
+  </testgroup>
+  <testgroup title="DTC_D21429">
+    <capltestcase name="DTC_D21429" title="D21429 DTC LONG ACCEL INVALID ERROR" />
+  </testgroup>
+  <testgroup title="DTC_D21329">
+    <capltestcase name="DTC_D21329" title="D21329 DTC LATERAL ACCEL INVALID ERROR" />
+  </testgroup>
+  <testgroup title="DTC_D20629">
+    <capltestcase name="DTC_D20629" title="D20629 DTC YAWRATE INVALID ERROR" />
+  </testgroup>
+  <testgroup title="DTC_D2A429">
+    <capltestcase name="DTC_D2A429" title="D2A429 DTC VEHSPEED INVALID ERROR" />
+  </testgroup>
+  <testgroup title="DTC_578D29">
+    <capltestcase name="DTC_578D29" title="578D29 DTC STEERWHEEL ANGLE INVALID ERROR" />
+  </testgroup>
+  <testgroup title="DTC_579E91">
+    <capltestcase name="DTC_579E91" title="579E91 DTC ARS VDY PARAMETER EXCEPTION" />
+  </testgroup>
+  <testgroup title="DTC_9C7C00">
+    <capltestcase name="DTC_9C7C00" title="9C7C00 DTC VEHICLE CONFIGURATION PARAMTER INVALID" />
+  </testgroup>
 </testmodule>
+
+
