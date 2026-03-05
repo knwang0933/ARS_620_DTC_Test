@@ -1,0 +1,77 @@
+﻿<testmodule title="Uds_XML" version="1.0"> 
+	<testgroup title="10服务"> 
+		<capltestcase name="UDS_0x10_01" title="USD_0x10_01"> 
+		</capltestcase> 
+		<capltestcase name="UDS_0x10_81" title="USD_0x10_81"> 
+		</capltestcase> 
+		<capltestcase name="UDS_0x10_NRC_13" title="USD_0x10__NRC_13"> 
+		</capltestcase> 
+		<capltestcase name="UDS_0x10_NRC_12" title="USD_0x10__NRC_12"> 
+		</capltestcase>
+	</testgroup> 
+	<testgroup title="11服务"> 
+		<capltestcase name="UDS_0x11_NRC_13" title="UDS_0x11_NRC_13"> 
+		</capltestcase> 
+		<capltestcase name="UDS_0x11_NRC_12" title="UDS_0x11_NRC_12"> 
+		</capltestcase> 
+	</testgroup> 
+	<testgroup title="14服务"> 
+		<capltestcase name="UDS_0x14" title="UDS_0x14"> 
+		</capltestcase> 
+		<capltestcase name="UDS_0x14_NRC_13" title="UDS_0x14_NRC_13"> 
+		</capltestcase> 
+		<capltestcase name="UDS_0x14_NRC_31" title="UDS_0x14_NRC_31"> 
+		</capltestcase> 
+	</testgroup> 
+	<testgroup title="19服务"> 
+		<capltestcase name="UDS_0x19" title="UDS_0x19"> 
+		</capltestcase> 
+		<capltestcase name="UDS_0x19_NRC_12" title="UDS_0x19_NRC_12"> 
+		</capltestcase> 
+		<capltestcase name="UDS_0x19_NRC_13" title="UDS_0x19_NRC_13"> 
+		</capltestcase> 
+	</testgroup> 
+	<testgroup title="22服务"> 
+		<capltestcase name="UDS_0x22_F198" title="UDS_0x22_F198"> 
+		</capltestcase> 
+	</testgroup> 
+	<testgroup title="28服务"> 
+		<capltestcase name="UDS_0x28" title="UDS_0x28"> 
+		</capltestcase> 
+		<capltestcase name="UDS_0x28_NRC_7F" title="UDS_0x28_NRC_7F"> 
+		</capltestcase> 
+		<capltestcase name="UDS_0x28_NRC_12" title="UDS_0x28_NRC_12"> 
+		</capltestcase> 
+		<capltestcase name="UDS_0x28_NRC_13" title="UDS_0x28_NRC_13"> 
+		</capltestcase> 
+		<capltestcase name="UDS_0x28_NRC_31" title="UDS_0x28_NRC_31"> 
+		</capltestcase> 
+	</testgroup> 
+	<testgroup title="2E服务"> 
+		<capltestcase name="UDS_0x2E_NRC_33" title="UDS_0x2E_NRC_33" 
+			class="Diag_Auto" assembly="Diag_Auto"> 
+		</capltestcase> 
+	</testgroup>
+	<testgroup title="2F服务"> 
+		<capltestcase name="UDS_0x2F_NRC_11" title="UDS_0x2F_NRC_11"> 
+		</capltestcase> 
+	</testgroup>
+	<testgroup title="31服务"> 
+		<capltestcase name="UDS_0x31_NRC_13" title="UDS_0x31_NRC_13"> 
+		</capltestcase> 
+		<capltestcase name="UDS_0x31_NRC_7F" title="UDS_0x31_NRC_7F"> 
+		</capltestcase> 
+		<capltestcase name="UDS_0x31_NRC_33" title="UDS_0x31_NRC_33"> 
+		</capltestcase> 
+	</testgroup>
+	<testgroup title="85服务"> 
+		<capltestcase name="UDS_0x85" title="UDS_0x85"> 
+		</capltestcase> 
+		<capltestcase name="UDS_0x85_NRC_7F" title="UDS_0x85_NRC_7F"> 
+		</capltestcase> 
+		<capltestcase name="UDS_0x85_NRC_12" title="UDS_0x85_NRC_12"> 
+		</capltestcase> 
+		<capltestcase name="UDS_0x85_NRC_13" title="UDS_0x85_NRC_13"> 
+		</capltestcase> 
+	</testgroup>
+</testmodule>
